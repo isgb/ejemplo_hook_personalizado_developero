@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { TodoItemData } from './interfaces';
 
 const useFetch = (url: string) =>{
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<TodoItemData | null>(null);
     const [loading, setLoading] = useState(second);
 
     useEffect(() => {
